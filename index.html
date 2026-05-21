@@ -1,186 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — VaccineTracker USA</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #111827;
-      background: #f9fafb;
-      padding: 0;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Vaccination Tracker</title>
+<style>
+  :root {
+    --text: #111827;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --primary: #1d4ed8;
+    --border: #e5e7eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --bg: #0b0f17;
+      --bg-alt: #111827;
+      --primary: #60a5fa;
+      --border: #1f2937;
     }
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 48px 32px 64px;
-    }
-    .header { margin-bottom: 36px; }
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 24px;
-      text-decoration: none;
-    }
-    .logo-icon {
-      width: 40px; height: 40px; border-radius: 10px;
-      background: #1a7fc4;
-      display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 20px;
-    }
-    .logo-text { font-size: 18px; font-weight: 700; color: #111827; }
-    h1 { font-size: 28px; font-weight: 800; color: #111827; margin-bottom: 8px; }
-    .subtitle { font-size: 14px; color: #6b7280; }
-    .badge {
-      display: inline-block;
-      background: #ecfdf5;
-      color: #065f46;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 99px;
-      margin-top: 12px;
-    }
-    h2 {
-      font-size: 16px; font-weight: 700; color: #111827;
-      margin: 32px 0 10px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #f3f4f6;
-    }
-    p { font-size: 14px; color: #374151; line-height: 1.75; margin-bottom: 12px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { font-size: 14px; color: #374151; line-height: 1.75; margin-bottom: 4px; }
-    .highlight {
-      background: #eff6ff;
-      border-left: 3px solid #1a7fc4;
-      padding: 14px 16px;
-      border-radius: 0 8px 8px 0;
-      margin: 20px 0;
-    }
-    .highlight p { margin: 0; color: #1e40af; font-weight: 500; }
-    .coppa-box {
-      background: #fefce8;
-      border-left: 3px solid #ca8a04;
-      padding: 14px 16px;
-      border-radius: 0 8px 8px 0;
-      margin: 20px 0;
-    }
-    .coppa-box p { margin: 0; color: #92400e; font-weight: 500; }
-    .footer {
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #f3f4f6;
-      font-size: 13px;
-      color: #9ca3af;
-    }
-  </style>
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 8px 0 4px;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 16px; margin: 24px 0 8px; }
+  p, li { color: var(--text); }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta strong { color: var(--text); }
+  a { color: var(--primary); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--bg-alt);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  code {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  .callout {
+    background: var(--bg-alt);
+    border-left: 3px solid var(--primary);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 20px 0;
+  }
+  .callout p { margin: 6px 0; }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="logo">
-        <div class="logo-icon">💉</div>
-        <span class="logo-text">VaccineTracker USA</span>
-      </div>
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">Effective date: April 2025 &nbsp;·&nbsp; Developer: Easio &nbsp;·&nbsp; Contact: <a href="mailto:nexaapps.dev@gmail.com" style="color:#1a7fc4;">nexaapps.dev@gmail.com</a></p>
-      <span class="badge">🌱 100% offline · No data collection · No servers</span>
-    </div>
+<main>
 
-    <div class="highlight">
-      <p>VaccineTracker USA does not collect, transmit, or share any personal data. Everything stays on your device. No accounts. No cloud. No tracking.</p>
-    </div>
+<h1>Privacy Policy</h1>
+<div class="meta">
+  <p><strong>App:</strong> Vaccination Tracker<br>
+  <strong>Effective date:</strong> May 11, 2026<br>
+  <strong>Contact:</strong> <a href="mailto:nexaapps.dev@gmail.com">nexaapps.dev@gmail.com</a></p>
+</div>
 
-    <h2>1. Who We Are</h2>
-    <p>VaccineTracker USA is developed and published by <strong>Easio</strong>, an independent developer. This app is a personal record-keeping tool that helps parents in the United States track their children's CDC-recommended vaccinations entirely on-device.</p>
+<div class="callout">
+  <p><strong>The short version</strong></p>
+  <p>Vaccination Tracker is a personal record-keeping app for your child's vaccinations. <strong>We do not collect, transmit, or store any of your data on our servers.</strong> All information you enter — your child's name, date of birth, vaccination records, photos, and notes — stays on your device.</p>
+  <p>We have no servers. We have no accounts. We have no analytics. We have no advertising partners. We never see your data.</p>
+</div>
 
-    <h2>2. Information We Store (Locally Only)</h2>
-    <p>VaccineTracker USA does not collect any information. The following data is stored <strong>only on your device</strong> using an encrypted on-device SQLite database and never transmitted to any server:</p>
-    <ul>
-      <li>Children's names and dates of birth</li>
-      <li>US state of residence (used to show state-specific school requirements)</li>
-      <li>Vaccination records including dates, provider names, lot numbers, and notes</li>
-      <li>Optional profile photos stored in private app storage</li>
-      <li>App preferences (theme, notification settings)</li>
-    </ul>
+<p>This privacy policy explains, in plain English, what data the app handles and why.</p>
 
-    <h2>3. How Your Data Is Used</h2>
-    <p>Your data is used solely to provide the app's features on your device:</p>
-    <ul>
-      <li>Displaying your children's CDC vaccine schedules and tracking records</li>
-      <li>Calculating overdue and upcoming doses based on CDC 2025 guidelines</li>
-      <li>Generating PDF reports for personal use or sharing with healthcare providers</li>
-      <li>Sending local push notifications for upcoming vaccine doses</li>
-      <li>Showing state-specific school immunization requirements</li>
-    </ul>
-    <p>No data is used for advertising, analytics, profiling, or any purpose beyond what you see in the app.</p>
+<hr>
 
-    <h2>4. Data Sharing</h2>
-    <p>We do not share your data with anyone. There are no third-party analytics SDKs, advertising networks, or external services integrated into VaccineTracker USA. Your data is yours alone.</p>
+<h2>1. Data we collect</h2>
+<p><strong>None.</strong></p>
+<p>The app does not transmit any personal information off your device. There is no sign-up, no login, no cloud backup, no analytics, no crash reporting that includes user data, and no advertising identifiers.</p>
+<p>All information stays in your device's local app storage, which is sandboxed by your operating system (iOS or Android) and only accessible to the Vaccination Tracker app on your device.</p>
 
-    <h2>5. Internet Access</h2>
-    <p>VaccineTracker USA is fully functional without an internet connection and does not communicate with any server. The only network activity occurs when you choose to tap external links (such as links to the CDC website), which opens your browser outside the app.</p>
+<h2>2. Data you enter</h2>
+<p>You may choose to enter the following information about your child:</p>
+<ul>
+  <li>Name and date of birth</li>
+  <li>Country and state/province</li>
+  <li>Vaccination records (vaccine name, dose number, date given)</li>
+  <li>Optional: provider name, lot number, notes</li>
+  <li>Optional: a photo of your child (avatar)</li>
+  <li>Optional: a photo of a vaccination record</li>
+</ul>
+<p>This information is stored only on your device. You can delete it at any time from within the app (Settings → Delete All Data).</p>
 
-    <h2>6. Camera &amp; Photo Library</h2>
-    <p>VaccineTracker USA may request access to your camera or photo library for two purposes:</p>
-    <ul>
-      <li><strong>Profile photos:</strong> Optionally attach a photo to a child's profile. Stored locally only.</li>
-      <li><strong>Record scanning (Premium):</strong> Use your camera to photograph paper vaccination records for easier manual entry. Images are processed on-device and never uploaded.</li>
-    </ul>
-    <p>Camera access is always optional. You may deny camera permission and still use all core features of the app.</p>
+<h2>3. Permissions we request</h2>
+<p>We request the minimum permissions needed for the app to work. None of the data accessed by these permissions is transmitted off your device.</p>
 
-    <h2>7. Push Notifications</h2>
-    <p>If you enable push notifications, VaccineTracker USA uses your device's local notification system to remind you of upcoming vaccine doses. Notification scheduling is handled entirely on-device. No notification content or schedule is sent to any server.</p>
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why</th><th>Where the data goes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Camera</strong></td>
+      <td>To photograph a paper vaccination record (Premium feature) and to scan QR codes when importing a child profile from another phone</td>
+      <td>The image is processed locally and saved with the record on your device</td>
+    </tr>
+    <tr>
+      <td><strong>Photo library</strong></td>
+      <td>To pick an existing photo as your child's avatar or as a record attachment</td>
+      <td>The image is copied into the app's local storage on your device</td>
+    </tr>
+    <tr>
+      <td><strong>Notifications</strong></td>
+      <td>To remind you when a vaccine is due or overdue</td>
+      <td>All reminders are scheduled locally on your device — no server is involved</td>
+    </tr>
+  </tbody>
+</table>
+<p>You can deny any of these permissions and the rest of the app will continue to work.</p>
 
-    <h2>8. In-App Purchases</h2>
-    <p>VaccineTracker USA offers an optional one-time premium upgrade through Google Play Billing. Purchase transactions are handled entirely by Google Play. We do not process, store, or have access to any payment information. For purchase support, contact Google Play directly.</p>
+<h2>4. Data sharing</h2>
+<p>We do not share your data with anyone. We have no third-party SDKs, no analytics providers, no advertising networks, and no business partners that receive data from the app.</p>
+<p>When you choose to <strong>export</strong> your records — as a PDF, JSON backup, or QR code — that file is created on your device and shared via your operating system's standard share sheet (e.g., email, AirDrop, Messages). The destination of that file is your choice. We never see it.</p>
+<p>When you choose to <strong>import</strong> records from a backup file or QR code, that file is read on your device only.</p>
 
-    <h2>9. Children's Privacy (COPPA)</h2>
-    <div class="coppa-box">
-      <p>VaccineTracker USA complies with the Children's Online Privacy Protection Act (COPPA). We do not collect any personal information from children. The app is operated by parents on behalf of their children — all data is entered by the parent and stored locally on the parent's device only.</p>
-    </div>
-    <p>Because VaccineTracker USA operates entirely offline with no server communication, no child data ever leaves the parent's device. We have no ability to access, view, or process any information about any child.</p>
+<h2>5. In-app purchases</h2>
+<p>The optional Premium upgrade is handled entirely by the Apple App Store or Google Play Store. We do not see, receive, or store your payment information, billing address, or any account details from the store.</p>
+<p>The app stores a single boolean on your device indicating whether you have purchased Premium.</p>
 
-    <h2>10. Data Security</h2>
-    <p>All data is stored in a private on-device SQLite database accessible only to the VaccineTracker USA app. No data is stored in shared or publicly accessible locations on your device.</p>
+<h2>6. Children's privacy</h2>
+<p>Vaccination Tracker is designed for parents and guardians to track their children's vaccination records. The app is not directed at children, and children are not the users of the app.</p>
+<p>Because the app does not transmit any data to us, we do not knowingly collect personal information from children — or from anyone — on our servers (we have no servers).</p>
+<p>If a parent enters information about a child into the app, that information is stored locally on the parent's device under the parent's control. The parent can delete that information at any time.</p>
+<p>This approach is consistent with the U.S. Children's Online Privacy Protection Act (COPPA) and the EU General Data Protection Regulation (GDPR), including the additional protections for personal data of children (sometimes called "GDPR-K" or Article 8).</p>
 
-    <h2>11. Data Deletion</h2>
-    <p>You have full control over your data at all times:</p>
-    <ul>
-      <li>Delete individual vaccination records from any child's profile</li>
-      <li>Remove a child's profile and all associated records</li>
-      <li>Wipe all data at once via <strong>Settings → Delete All Data</strong></li>
-      <li>Uninstalling the app permanently removes all data from your device</li>
-    </ul>
-    <p>Because data is stored only on your device, there is no server-side deletion required.</p>
+<h2>7. Data retention</h2>
+<p>Data you enter remains on your device until you delete it from within the app or uninstall the app. We do not retain any copies of your data, because we never receive any.</p>
 
-    <h2>12. Third-Party Libraries</h2>
-    <p>VaccineTracker USA integrates the following on-device libraries. None transmit personal information externally:</p>
-    <ul>
-      <li><strong>Google Play Billing</strong> — handles in-app purchase transactions via Google Play</li>
-      <li><strong>Expo Notifications</strong> — schedules local push notifications on-device</li>
-      <li><strong>Expo Camera / Image Picker</strong> — accesses device camera and photo library on permission</li>
-      <li><strong>Expo SQLite</strong> — stores all app data in a local on-device database</li>
-    </ul>
+<h2>8. Your rights</h2>
+<p>Because we do not collect or store your personal data, most data protection rights (access, deletion, correction, export) are exercised directly through the app:</p>
+<ul>
+  <li><strong>Access / view your data:</strong> Open the app.</li>
+  <li><strong>Export your data:</strong> Settings → Backup Data (JSON file) or Share via QR Code.</li>
+  <li><strong>Correct your data:</strong> Edit or delete records in the app.</li>
+  <li><strong>Delete your data:</strong> Settings → Delete All Data, or uninstall the app.</li>
+  <li><strong>Stop processing:</strong> Uninstall the app.</li>
+</ul>
+<p>If you have questions about how the app works, you can reach us at the email address below.</p>
 
-    <h2>13. Changes to This Policy</h2>
-    <p>If we make material changes to this privacy policy, we will update the effective date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+<h2>9. Security</h2>
+<p>Your data is protected by the standard sandboxing and encryption that your device's operating system provides for app data. We do not add additional encryption on top, because the data does not leave your device.</p>
+<p>If you choose to back up your device to iCloud or Google Drive, your operating system may include the app's local data in that backup, subject to the privacy policy of Apple or Google. We are not involved in that process.</p>
 
-    <h2>14. Contact</h2>
-    <p>If you have any questions or concerns about this privacy policy or your data, please contact us:</p>
-    <p>
-      <strong>Easio</strong><br/>
-      <a href="mailto:nexaapps.dev@gmail.com" style="color:#1a7fc4;">nexaapps.dev@gmail.com</a><br/>
-      We respond to all inquiries within 7 business days.
-    </p>
+<h2>10. Changes to this policy</h2>
+<p>If we change how the app handles data — for example, if a future version added an optional cloud sync feature — we would update this policy and notify users in the app before the change takes effect.</p>
+<p>Changes will be reflected by an updated "Effective date" at the top of this page.</p>
 
-    <div class="footer">
-      <p>VaccineTracker USA &nbsp;·&nbsp; Published by Easio &nbsp;·&nbsp; Go digital. Save trees. 🌱</p>
-    </div>
-  </div>
+<h2>11. Not medical advice</h2>
+<p>Vaccination Tracker is a personal record-keeping tool. It does not provide medical advice, diagnosis, or treatment. Vaccine schedule recommendations shown in the app are based on publicly available guidance from the following official authorities, depending on the country selected for each child profile:</p>
+<ul>
+  <li><strong>United States</strong> — Centers for Disease Control and Prevention (CDC)</li>
+  <li><strong>Canada</strong> — Public Health Agency of Canada / National Advisory Committee on Immunization (NACI)</li>
+  <li><strong>Mexico</strong> — Secretaría de Salud / Programa de Vacunación Universal (PVU)</li>
+  <li><strong>United Kingdom</strong> — NHS / Joint Committee on Vaccination and Immunisation (JCVI)</li>
+  <li><strong>Australia</strong> — Department of Health and Aged Care / Australian Technical Advisory Group on Immunisation (ATAGI)</li>
+</ul>
+<p>Always consult a licensed healthcare provider for your child's vaccinations.</p>
+
+<h2>12. Contact</h2>
+<p>If you have any questions about this privacy policy or how the app handles data:</p>
+<p><strong>Email:</strong> <a href="mailto:nexaapps.dev@gmail.com">nexaapps.dev@gmail.com</a></p>
+<p>We aim to respond within five business days.</p>
+
+<footer>
+  <p>© 2026 Vaccination Tracker · Last updated May 1, 2026</p>
+</footer>
+
+</main>
 </body>
 </html>

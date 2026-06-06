@@ -118,7 +118,7 @@ We read every email.
 
 ---
 
-## 🌱 Why we built this
+## 🌱 Why I built this
 
 Tracking your kid's vaccines shouldn't require an account. It shouldn't
 need an internet connection. And it definitely shouldn't sell your data

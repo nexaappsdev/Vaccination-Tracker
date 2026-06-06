@@ -114,7 +114,7 @@ link above.
 Found a bug? Have a country we should support next?
 📧 [nexaapps.dev@gmail.com](mailto:nexaapps.dev@gmail.com)
 
-We read every email.
+I will read every email.
 
 ---
 
